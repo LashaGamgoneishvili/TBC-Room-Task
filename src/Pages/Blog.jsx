@@ -1,3 +1,5 @@
+import logo from "../Assets/2815428.png";
+
 const blogData = [
   {
     id: 1,
@@ -8,7 +10,7 @@ const blogData = [
 
     date: "February 10, 2024",
 
-    imageUrl: "https://example.com/image1.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -23,27 +25,12 @@ const blogData = [
 
     date: "February 12, 2024",
 
-    imageUrl: "https://example.com/image2.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
 
   // Add more blog posts here
-
-  {
-    id: 20,
-
-    title: "Duis Aute Irure Dolor",
-
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-
-    date: "February 28, 2024",
-
-    imageUrl: "https://example.com/image20.jpg",
-
-    buttonText: "Read More",
-  },
 
   {
     id: 3,
@@ -55,7 +42,7 @@ const blogData = [
 
     date: "February 15, 2024",
 
-    imageUrl: "https://example.com/image3.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -63,14 +50,14 @@ const blogData = [
   {
     id: 4,
 
-    title: "Duis Aute Irure Dolor",
+    title: "Sed Do Eiusmod Tempor",
 
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 
     date: "February 18, 2024",
 
-    imageUrl: "https://example.com/image4.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -85,7 +72,7 @@ const blogData = [
 
     date: "February 20, 2024",
 
-    imageUrl: "https://example.com/image5.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -100,7 +87,7 @@ const blogData = [
 
     date: "February 22, 2024",
 
-    imageUrl: "https://example.com/image6.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -115,7 +102,7 @@ const blogData = [
 
     date: "February 24, 2024",
 
-    imageUrl: "https://example.com/image7.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -130,7 +117,7 @@ const blogData = [
 
     date: "February 26, 2024",
 
-    imageUrl: "https://example.com/image8.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -145,7 +132,7 @@ const blogData = [
 
     date: "February 28, 2024",
 
-    imageUrl: "https://example.com/image9.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -160,7 +147,7 @@ const blogData = [
 
     date: "March 1, 2024",
 
-    imageUrl: "https://example.com/image10.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -175,7 +162,7 @@ const blogData = [
 
     date: "March 3, 2024",
 
-    imageUrl: "https://example.com/image11.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -190,7 +177,7 @@ const blogData = [
 
     date: "March 5, 2024",
 
-    imageUrl: "https://example.com/image12.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -205,7 +192,7 @@ const blogData = [
 
     date: "March 7, 2024",
 
-    imageUrl: "https://example.com/image13.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -220,7 +207,7 @@ const blogData = [
 
     date: "March 9, 2024",
 
-    imageUrl: "https://example.com/image14.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -235,7 +222,7 @@ const blogData = [
 
     date: "March 11, 2024",
 
-    imageUrl: "https://example.com/image15.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -250,7 +237,7 @@ const blogData = [
 
     date: "March 13, 2024",
 
-    imageUrl: "https://example.com/image16.jpg",
+    imageUrl: logo,
 
     buttonText: "Read More",
   },
@@ -262,7 +249,7 @@ const blogData = [
 
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     date: "February 10, 2024",
-    imageUrl: "https://example.com/image1.jpg",
+    imageUrl: logo,
     buttonText: "Read More",
   },
 
@@ -271,7 +258,7 @@ const blogData = [
     title: "Lorem Ipsum Dolor Sit Amet",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     date: "February 10, 2024",
-    imageUrl: "https://example.com/image1.jpg",
+    imageUrl: logo,
     buttonText: "Read More",
   },
   {
@@ -280,7 +267,7 @@ const blogData = [
     description:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     date: "February 12, 2024",
-    imageUrl: "https://example.com/image2.jpg",
+    imageUrl: logo,
     buttonText: "Read More",
   },
 
@@ -290,7 +277,7 @@ const blogData = [
     description:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     date: "February 28, 2024",
-    imageUrl: "https://example.com/image20.jpg",
+    imageUrl: logo,
     buttonText: "Read More",
   },
 ];
@@ -303,8 +290,8 @@ export default function Blog() {
           <div key={data.id} className="blog">
             <h2>{data.title}</h2>
             <p>{data.description}</p>
-            <p>{data.data}</p>
-            <image src={data.imageUrl} />
+            <img src={data.imageUrl} alt="Person-logo" />
+            <p>{data.date}</p>
             <button>{data.buttonText}</button>
           </div>
         );
